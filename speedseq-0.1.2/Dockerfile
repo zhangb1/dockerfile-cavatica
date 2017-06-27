@@ -4,7 +4,10 @@ LABEL \
   version="0.1.2" \
   description="Speedseq: A flexible framework for rapid genome analysis and interpretation"
 
-RUN apt-get update && apt-get install -y python-pip python-dev build-essential \
+RUN apt-get update && apt-get install -y tar gzip bzip2 \
+  python-pip \
+  python-dev \
+  build-essential \
   cmake \
   git \
   libtool \
@@ -12,7 +15,7 @@ RUN apt-get update && apt-get install -y python-pip python-dev build-essential \
   gawk \
   libbz2-dev \
   liblzma-dev \
-  libncurses5-dev
+  libncurses5-dev \
 
 RUN apt-get install -y  python-numpy python-scipy 
 

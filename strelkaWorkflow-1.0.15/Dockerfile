@@ -4,7 +4,7 @@ LABEL \
   version="1.0.15" \
   description="StrelkaWorkflow for somatic mutation detection"
 
-RUN apt-get update && apt-get install -y  \
+RUN apt-get update && apt-get install -y  tar gzip \
   bzip2 \
   g++ \
   make \
